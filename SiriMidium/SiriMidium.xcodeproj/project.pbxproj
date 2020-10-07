@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28787D1224C9E8930000851E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28787D1124C9E8930000851E /* AppDelegate.swift */; };
+		28787D1424C9E8930000851E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28787D1324C9E8930000851E /* SceneDelegate.swift */; };
+		28787D1624C9E8930000851E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28787D1524C9E8930000851E /* ViewController.swift */; };
+		28787D1924C9E8930000851E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28787D1724C9E8930000851E /* Main.storyboard */; };
+		28787D1B24C9E8950000851E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28787D1A24C9E8950000851E /* Assets.xcassets */; };
+		28787D1E24C9E8950000851E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28787D1C24C9E8950000851E /* LaunchScreen.storyboard */; };
+		28787D2824C9E8BD0000851E /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28787D2724C9E8BD0000851E /* Intents.framework */; };
+		28787D2A24C9E8C80000851E /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28787D2924C9E8C80000851E /* IntentsUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28787D0E24C9E8930000851E /* SiriMidium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriMidium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28787D1124C9E8930000851E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28787D1324C9E8930000851E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28787D1524C9E8930000851E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28787D1824C9E8930000851E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28787D1A24C9E8950000851E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28787D1D24C9E8950000851E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28787D1F24C9E8950000851E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28787D2524C9E89F0000851E /* SiriMidium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriMidium.entitlements; sourceTree = "<group>"; };
+		28787D2724C9E8BD0000851E /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		28787D2924C9E8C80000851E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28787D0B24C9E8930000851E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28787D2A24C9E8C80000851E /* IntentsUI.framework in Frameworks */,
+				28787D2824C9E8BD0000851E /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28787D0524C9E8920000851E = {
+			isa = PBXGroup;
+			children = (
+				28787D1024C9E8930000851E /* SiriMidium */,
+				28787D0F24C9E8930000851E /* Products */,
+				28787D2624C9E8BD0000851E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28787D0F24C9E8930000851E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28787D0E24C9E8930000851E /* SiriMidium.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28787D1024C9E8930000851E /* SiriMidium */ = {
+			isa = PBXGroup;
+			children = (
+				28787D2524C9E89F0000851E /* SiriMidium.entitlements */,
+				28787D1124C9E8930000851E /* AppDelegate.swift */,
+				28787D1324C9E8930000851E /* SceneDelegate.swift */,
+				28787D1524C9E8930000851E /* ViewController.swift */,
+				28787D1724C9E8930000851E /* Main.storyboard */,
+				28787D1A24C9E8950000851E /* Assets.xcassets */,
+				28787D1C24C9E8950000851E /* LaunchScreen.storyboard */,
+				28787D1F24C9E8950000851E /* Info.plist */,
+			);
+			path = SiriMidium;
+			sourceTree = "<group>";
+		};
+		28787D2624C9E8BD0000851E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28787D2924C9E8C80000851E /* IntentsUI.framework */,
+				28787D2724C9E8BD0000851E /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28787D0D24C9E8930000851E /* SiriMidium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28787D2224C9E8950000851E /* Build configuration list for PBXNativeTarget "SiriMidium" */;
+			buildPhases = (
+				28787D0A24C9E8930000851E /* Sources */,
+				28787D0B24C9E8930000851E /* Frameworks */,
+				28787D0C24C9E8930000851E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriMidium;
+			productName = SiriMidium;
+			productReference = 28787D0E24C9E8930000851E /* SiriMidium.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28787D0624C9E8920000851E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Bunti Nizama";
+				TargetAttributes = {
+					28787D0D24C9E8930000851E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 28787D0924C9E8920000851E /* Build configuration list for PBXProject "SiriMidium" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28787D0524C9E8920000851E;
+			productRefGroup = 28787D0F24C9E8930000851E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28787D0D24C9E8930000851E /* SiriMidium */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28787D0C24C9E8930000851E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28787D1E24C9E8950000851E /* LaunchScreen.storyboard in Resources */,
+				28787D1B24C9E8950000851E /* Assets.xcassets in Resources */,
+				28787D1924C9E8930000851E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28787D0A24C9E8930000851E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28787D1624C9E8930000851E /* ViewController.swift in Sources */,
+				28787D1224C9E8930000851E /* AppDelegate.swift in Sources */,
+				28787D1424C9E8930000851E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28787D1724C9E8930000851E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28787D1824C9E8930000851E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28787D1C24C9E8950000851E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28787D1D24C9E8950000851E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28787D2024C9E8950000851E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28787D2124C9E8950000851E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28787D2324C9E8950000851E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriMidium/SiriMidium.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiriMidium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testmedium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28787D2424C9E8950000851E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriMidium/SiriMidium.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiriMidium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testmedium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28787D0924C9E8920000851E /* Build configuration list for PBXProject "SiriMidium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28787D2024C9E8950000851E /* Debug */,
+				28787D2124C9E8950000851E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28787D2224C9E8950000851E /* Build configuration list for PBXNativeTarget "SiriMidium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28787D2324C9E8950000851E /* Debug */,
+				28787D2424C9E8950000851E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28787D0624C9E8920000851E /* Project object */;
+}

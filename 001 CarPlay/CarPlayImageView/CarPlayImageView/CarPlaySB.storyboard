@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car Play SceenVC-->
+        <scene sceneID="xKQ-o0-ckE">
+            <objects>
+                <viewController storyboardIdentifier="CarPlaySceenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1yb-zN-mUP" customClass="CarPlaySceenVC" customModule="CarPlayImageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6VP-cQ-GOM">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vpw-ey-xEc">
+                                <rect key="frame" x="280" y="176" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="KTP-vk-MN7"/>
+                                    <constraint firstAttribute="width" constant="240" id="i4z-cD-4nq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fog-UA-Oz3">
+                                <rect key="frame" x="530" y="220" width="260" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="F6b-fc-Ovk"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="next" destination="1yb-zN-mUP" eventType="touchUpInside" id="TSE-93-fkN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3hz-N8-H6x" firstAttribute="trailing" secondItem="fog-UA-Oz3" secondAttribute="trailing" constant="10" id="66x-IL-0T1"/>
+                            <constraint firstItem="Vpw-ey-xEc" firstAttribute="centerX" secondItem="6VP-cQ-GOM" secondAttribute="centerX" id="Dyo-dU-6Iw"/>
+                            <constraint firstItem="Vpw-ey-xEc" firstAttribute="centerY" secondItem="6VP-cQ-GOM" secondAttribute="centerY" id="O4G-13-IH0"/>
+                            <constraint firstItem="fog-UA-Oz3" firstAttribute="leading" secondItem="Vpw-ey-xEc" secondAttribute="trailing" constant="10" id="ZrL-4S-NNJ"/>
+                            <constraint firstItem="fog-UA-Oz3" firstAttribute="centerY" secondItem="6VP-cQ-GOM" secondAttribute="centerY" id="eZk-ou-b4Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3hz-N8-H6x"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="800" height="480"/>
+                    <connections>
+                        <outlet property="imageView" destination="Vpw-ey-xEc" id="xOK-aw-GkF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfU-ze-Lao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="131.91964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="720" height="450"/>
+    </resources>
+</document>

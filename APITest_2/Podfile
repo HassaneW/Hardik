@@ -1,0 +1,8 @@
+
+use_frameworks!
+
+target 'APITest_2' do
+ 
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+end
