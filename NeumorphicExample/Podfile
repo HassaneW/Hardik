@@ -1,0 +1,7 @@
+use_frameworks!
+
+target 'NeumorphicExample' do
+  pod 'MHSoftUI'
+
+ 
+end
