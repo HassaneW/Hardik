@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EventData" representedClassName="EventData" syncable="YES" codeGenerationType="class">
+        <attribute name="access_link" optional="YES" attributeType="String"/>
+        <attribute name="access_phone" optional="YES" attributeType="String"/>
+        <attribute name="address_city" optional="YES" attributeType="String"/>
+        <attribute name="address_name" optional="YES" attributeType="String"/>
+        <attribute name="address_street" optional="YES" attributeType="String"/>
+        <attribute name="address_zipcode" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="contact_facebook" optional="YES" attributeType="String"/>
+        <attribute name="contact_mail" optional="YES" attributeType="String"/>
+        <attribute name="contact_name" optional="YES" attributeType="String"/>
+        <attribute name="contact_phone" optional="YES" attributeType="String"/>
+        <attribute name="contact_twitter" optional="YES" attributeType="String"/>
+        <attribute name="contact_url" optional="YES" attributeType="String"/>
+        <attribute name="date_description" optional="YES" attributeType="String"/>
+        <attribute name="date_end" optional="YES" attributeType="String"/>
+        <attribute name="date_start" optional="YES" attributeType="String"/>
+        <attribute name="description1" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="lattitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="programs" optional="YES" attributeType="String"/>
+        <attribute name="tags" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="transport" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="EventData" positionX="-63" positionY="-18" width="128" height="28"/>
+    </elements>
+</model>

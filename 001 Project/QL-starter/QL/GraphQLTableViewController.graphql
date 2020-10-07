@@ -1,0 +1,28 @@
+query LoadContacts {
+  allContacts {
+    ...ContactDetails
+  }
+}
+
+fragment ContactDetails on Contact {
+    id
+    name
+    number
+    createdAt
+    updatedAt
+}
+
+mutation EditName($id: ID!, $name: String!) {
+    updateContact(id: $id, name: $name) {
+        name
+        updatedAt
+    }
+}
+
+mutation EditNumber($id: ID!, $number: Int!) {
+    updateContact(id: $id, number: $number) {
+        number
+        updatedAt
+    }
+}
+

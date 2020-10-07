@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		281EA00E252764D900D73265 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EA00D252764D900D73265 /* DetailView.swift */; };
+		2831A620252B667500695FCB /* Noms_des_fichiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831A61F252B667500695FCB /* Noms_des_fichiers.swift */; };
+		2831A622252B675500695FCB /* PictogrammeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831A621252B675500695FCB /* PictogrammeView.swift */; };
+		2831A627252CBCD900695FCB /* RATPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831A626252CBCD900695FCB /* RATPView.swift */; };
+		2831A629252CC42700695FCB /* ToilettesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831A628252CC42700695FCB /* ToilettesView.swift */; };
+		2835D5D9252380DA0068C4AC /* ShopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5D8252380DA0068C4AC /* ShopsView.swift */; };
+		2835D5DB252381D70068C4AC /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5DA252381D70068C4AC /* DataModel.swift */; };
+		2835D5EB252383AA0068C4AC /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5E4252383AA0068C4AC /* Geometry.swift */; };
+		2835D5EC252383AA0068C4AC /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5E5252383AA0068C4AC /* Fields.swift */; };
+		2835D5ED252383AA0068C4AC /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5E6252383AA0068C4AC /* Parameters.swift */; };
+		2835D5EE252383AA0068C4AC /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5E7252383AA0068C4AC /* APIResponseModel.swift */; };
+		2835D5EF252383AA0068C4AC /* Facet_groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5E8252383AA0068C4AC /* Facet_groups.swift */; };
+		2835D5F0252383AA0068C4AC /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5E9252383AA0068C4AC /* Records.swift */; };
+		2835D5F1252383AA0068C4AC /* Facets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5EA252383AA0068C4AC /* Facets.swift */; };
+		28D8D9FC252231B8003D597E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D8D9FB252231B8003D597E /* AppDelegate.swift */; };
+		28D8D9FE252231B8003D597E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D8D9FD252231B8003D597E /* SceneDelegate.swift */; };
+		28D8DA01252231B8003D597E /* MetroParis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D8D9FF252231B8003D597E /* MetroParis.xcdatamodeld */; };
+		28D8DA03252231B8003D597E /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D8DA02252231B8003D597E /* LaunchScreen.swift */; };
+		28D8DA05252231BB003D597E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D8DA04252231BB003D597E /* Assets.xcassets */; };
+		28D8DA08252231BB003D597E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D8DA07252231BB003D597E /* Preview Assets.xcassets */; };
+		28D8DA0B252231BB003D597E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D8DA09252231BB003D597E /* LaunchScreen.storyboard */; };
+		28D8DA1325223694003D597E /* TabViewMetro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D8DA1225223694003D597E /* TabViewMetro.swift */; };
+		D820832C697C9752FA3A1549 /* Pods_MetroParis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAFC390BCD02C537DCE93BB /* Pods_MetroParis.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23842F66501019FC16774B6A /* Pods-MetroParis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroParis.release.xcconfig"; path = "Target Support Files/Pods-MetroParis/Pods-MetroParis.release.xcconfig"; sourceTree = "<group>"; };
+		281EA00D252764D900D73265 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		2831A61F252B667500695FCB /* Noms_des_fichiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noms_des_fichiers.swift; sourceTree = "<group>"; };
+		2831A621252B675500695FCB /* PictogrammeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictogrammeView.swift; sourceTree = "<group>"; };
+		2831A626252CBCD900695FCB /* RATPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RATPView.swift; sourceTree = "<group>"; };
+		2831A628252CC42700695FCB /* ToilettesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToilettesView.swift; sourceTree = "<group>"; };
+		2835D5D8252380DA0068C4AC /* ShopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsView.swift; sourceTree = "<group>"; };
+		2835D5DA252381D70068C4AC /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		2835D5E4252383AA0068C4AC /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		2835D5E5252383AA0068C4AC /* Fields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		2835D5E6252383AA0068C4AC /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		2835D5E7252383AA0068C4AC /* APIResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
+		2835D5E8252383AA0068C4AC /* Facet_groups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facet_groups.swift; sourceTree = "<group>"; };
+		2835D5E9252383AA0068C4AC /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		2835D5EA252383AA0068C4AC /* Facets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facets.swift; sourceTree = "<group>"; };
+		28D8D9F8252231B8003D597E /* MetroParis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroParis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D8D9FB252231B8003D597E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28D8D9FD252231B8003D597E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28D8DA00252231B8003D597E /* MetroParis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetroParis.xcdatamodel; sourceTree = "<group>"; };
+		28D8DA02252231B8003D597E /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		28D8DA04252231BB003D597E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28D8DA07252231BB003D597E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28D8DA0A252231BB003D597E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28D8DA0C252231BB003D597E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D8DA1225223694003D597E /* TabViewMetro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewMetro.swift; sourceTree = "<group>"; };
+		9DAFC390BCD02C537DCE93BB /* Pods_MetroParis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroParis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CABFA58BE84A0D0FA810C2 /* Pods-MetroParis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroParis.debug.xcconfig"; path = "Target Support Files/Pods-MetroParis/Pods-MetroParis.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28D8D9F5252231B8003D597E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D820832C697C9752FA3A1549 /* Pods_MetroParis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E28F24333867357045C1A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1CABFA58BE84A0D0FA810C2 /* Pods-MetroParis.debug.xcconfig */,
+				23842F66501019FC16774B6A /* Pods-MetroParis.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2831A623252B676900695FCB /* Shops */ = {
+			isa = PBXGroup;
+			children = (
+				281EA00D252764D900D73265 /* DetailView.swift */,
+				2835D5D8252380DA0068C4AC /* ShopsView.swift */,
+			);
+			path = Shops;
+			sourceTree = "<group>";
+		};
+		2831A624252B678100695FCB /* Pictogramme */ = {
+			isa = PBXGroup;
+			children = (
+				2831A621252B675500695FCB /* PictogrammeView.swift */,
+			);
+			path = Pictogramme;
+			sourceTree = "<group>";
+		};
+		2831A625252CBCC200695FCB /* RATP */ = {
+			isa = PBXGroup;
+			children = (
+				2831A626252CBCD900695FCB /* RATPView.swift */,
+			);
+			path = RATP;
+			sourceTree = "<group>";
+		};
+		2831A62A252CC42E00695FCB /* Toilettes */ = {
+			isa = PBXGroup;
+			children = (
+				2831A628252CC42700695FCB /* ToilettesView.swift */,
+			);
+			path = Toilettes;
+			sourceTree = "<group>";
+		};
+		2835D5E3252383AA0068C4AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2835D5E4252383AA0068C4AC /* Geometry.swift */,
+				2835D5E5252383AA0068C4AC /* Fields.swift */,
+				2835D5E6252383AA0068C4AC /* Parameters.swift */,
+				2835D5E7252383AA0068C4AC /* APIResponseModel.swift */,
+				2835D5E8252383AA0068C4AC /* Facet_groups.swift */,
+				2831A61F252B667500695FCB /* Noms_des_fichiers.swift */,
+				2835D5E9252383AA0068C4AC /* Records.swift */,
+				2835D5EA252383AA0068C4AC /* Facets.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28D8D9EF252231B8003D597E = {
+			isa = PBXGroup;
+			children = (
+				28D8D9FA252231B8003D597E /* MetroParis */,
+				28D8D9F9252231B8003D597E /* Products */,
+				18E28F24333867357045C1A7 /* Pods */,
+				DC50DFF77ABA9B9CEB5C6785 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28D8D9F9252231B8003D597E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28D8D9F8252231B8003D597E /* MetroParis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28D8D9FA252231B8003D597E /* MetroParis */ = {
+			isa = PBXGroup;
+			children = (
+				28D8D9FB252231B8003D597E /* AppDelegate.swift */,
+				28D8D9FD252231B8003D597E /* SceneDelegate.swift */,
+				28D8DA02252231B8003D597E /* LaunchScreen.swift */,
+				28D8DA1225223694003D597E /* TabViewMetro.swift */,
+				2831A62A252CC42E00695FCB /* Toilettes */,
+				2831A625252CBCC200695FCB /* RATP */,
+				2831A624252B678100695FCB /* Pictogramme */,
+				2831A623252B676900695FCB /* Shops */,
+				28D8DA04252231BB003D597E /* Assets.xcassets */,
+				28D8DA09252231BB003D597E /* LaunchScreen.storyboard */,
+				28D8DA0C252231BB003D597E /* Info.plist */,
+				2835D5DA252381D70068C4AC /* DataModel.swift */,
+				2835D5E3252383AA0068C4AC /* Model */,
+				28D8D9FF252231B8003D597E /* MetroParis.xcdatamodeld */,
+				28D8DA06252231BB003D597E /* Preview Content */,
+			);
+			path = MetroParis;
+			sourceTree = "<group>";
+		};
+		28D8DA06252231BB003D597E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28D8DA07252231BB003D597E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC50DFF77ABA9B9CEB5C6785 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DAFC390BCD02C537DCE93BB /* Pods_MetroParis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28D8D9F7252231B8003D597E /* MetroParis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D8DA0F252231BB003D597E /* Build configuration list for PBXNativeTarget "MetroParis" */;
+			buildPhases = (
+				D23C1506B6A094EAFD993EF4 /* [CP] Check Pods Manifest.lock */,
+				28D8D9F4252231B8003D597E /* Sources */,
+				28D8D9F5252231B8003D597E /* Frameworks */,
+				28D8D9F6252231B8003D597E /* Resources */,
+				8E08469A1C559C661E8E8C97 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetroParis;
+			productName = MetroParis;
+			productReference = 28D8D9F8252231B8003D597E /* MetroParis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28D8D9F0252231B8003D597E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Bunti Nizama";
+				TargetAttributes = {
+					28D8D9F7252231B8003D597E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 28D8D9F3252231B8003D597E /* Build configuration list for PBXProject "MetroParis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28D8D9EF252231B8003D597E;
+			productRefGroup = 28D8D9F9252231B8003D597E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28D8D9F7252231B8003D597E /* MetroParis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28D8D9F6252231B8003D597E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D8DA0B252231BB003D597E /* LaunchScreen.storyboard in Resources */,
+				28D8DA08252231BB003D597E /* Preview Assets.xcassets in Resources */,
+				28D8DA05252231BB003D597E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E08469A1C559C661E8E8C97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetroParis/Pods-MetroParis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetroParis/Pods-MetroParis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetroParis/Pods-MetroParis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D23C1506B6A094EAFD993EF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetroParis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28D8D9F4252231B8003D597E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2835D5F0252383AA0068C4AC /* Records.swift in Sources */,
+				2835D5DB252381D70068C4AC /* DataModel.swift in Sources */,
+				2835D5D9252380DA0068C4AC /* ShopsView.swift in Sources */,
+				28D8DA1325223694003D597E /* TabViewMetro.swift in Sources */,
+				2835D5EC252383AA0068C4AC /* Fields.swift in Sources */,
+				2835D5EE252383AA0068C4AC /* APIResponseModel.swift in Sources */,
+				2831A620252B667500695FCB /* Noms_des_fichiers.swift in Sources */,
+				28D8D9FC252231B8003D597E /* AppDelegate.swift in Sources */,
+				2835D5ED252383AA0068C4AC /* Parameters.swift in Sources */,
+				2835D5EF252383AA0068C4AC /* Facet_groups.swift in Sources */,
+				2831A629252CC42700695FCB /* ToilettesView.swift in Sources */,
+				28D8DA01252231B8003D597E /* MetroParis.xcdatamodeld in Sources */,
+				2831A627252CBCD900695FCB /* RATPView.swift in Sources */,
+				2835D5EB252383AA0068C4AC /* Geometry.swift in Sources */,
+				28D8DA03252231B8003D597E /* LaunchScreen.swift in Sources */,
+				28D8D9FE252231B8003D597E /* SceneDelegate.swift in Sources */,
+				2831A622252B675500695FCB /* PictogrammeView.swift in Sources */,
+				281EA00E252764D900D73265 /* DetailView.swift in Sources */,
+				2835D5F1252383AA0068C4AC /* Facets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28D8DA09252231BB003D597E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28D8DA0A252231BB003D597E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28D8DA0D252231BB003D597E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28D8DA0E252231BB003D597E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28D8DA10252231BB003D597E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CABFA58BE84A0D0FA810C2 /* Pods-MetroParis.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MetroParis/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MetroParis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BuntiNizama-Test.MetroParis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28D8DA11252231BB003D597E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23842F66501019FC16774B6A /* Pods-MetroParis.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MetroParis/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MetroParis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BuntiNizama-Test.MetroParis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28D8D9F3252231B8003D597E /* Build configuration list for PBXProject "MetroParis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D8DA0D252231BB003D597E /* Debug */,
+				28D8DA0E252231BB003D597E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D8DA0F252231BB003D597E /* Build configuration list for PBXNativeTarget "MetroParis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D8DA10252231BB003D597E /* Debug */,
+				28D8DA11252231BB003D597E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28D8D9FF252231B8003D597E /* MetroParis.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28D8DA00252231B8003D597E /* MetroParis.xcdatamodel */,
+			);
+			currentVersion = 28D8DA00252231B8003D597E /* MetroParis.xcdatamodel */;
+			path = MetroParis.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 28D8D9F0252231B8003D597E /* Project object */;
+}
