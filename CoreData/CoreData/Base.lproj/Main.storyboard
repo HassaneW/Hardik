@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreDataExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fe-ur-Y6a">
+                                <rect key="frame" x="20" y="49" width="184.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zzq-qw-HZd">
+                                <rect key="frame" x="209.5" y="49" width="184.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fSz-A6-reB">
+                                <rect key="frame" x="10" y="93" width="394" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn8-L6-uux">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="30"/>
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="xKU-QT-EKT"/>
+                                        </constraints>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUL-RG-QFI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlN-cf-B3A">
+                                        <rect key="frame" x="134.5" y="0.0" width="125" height="30"/>
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="YUv-rx-WeY"/>
+                                        </constraints>
+                                        <state key="normal" title="Update">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateData" destination="BYZ-38-t0r" eventType="touchUpInside" id="dBy-qe-h9j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u52-eb-drn">
+                                        <rect key="frame" x="269.5" y="0.0" width="124.5" height="30"/>
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Uv0-Bq-tq3"/>
+                                        </constraints>
+                                        <state key="normal" title="Delete">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteData" destination="BYZ-38-t0r" eventType="touchUpInside" id="gax-hV-Bwo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JBm-iI-5n8">
+                                <rect key="frame" x="0.0" y="133" width="414" height="729"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gfn-k8-lnd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2a8-mD-4s3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zzq-qw-HZd" firstAttribute="leading" secondItem="9fe-ur-Y6a" secondAttribute="trailing" constant="5" id="9j1-uU-p8F"/>
+                            <constraint firstItem="JBm-iI-5n8" firstAttribute="top" secondItem="fSz-A6-reB" secondAttribute="bottom" constant="10" id="ETd-53-Ihr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zzq-qw-HZd" secondAttribute="trailing" constant="20" id="Ioc-U9-KX9"/>
+                            <constraint firstItem="9fe-ur-Y6a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mk0-a5-lm3"/>
+                            <constraint firstAttribute="trailing" secondItem="fSz-A6-reB" secondAttribute="trailing" constant="10" id="Rze-CE-wr5"/>
+                            <constraint firstItem="Zzq-qw-HZd" firstAttribute="width" secondItem="9fe-ur-Y6a" secondAttribute="width" id="Ytn-IN-9eX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JBm-iI-5n8" secondAttribute="trailing" id="aYN-3a-Wm5"/>
+                            <constraint firstItem="fSz-A6-reB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="bnM-qC-pXC"/>
+                            <constraint firstItem="JBm-iI-5n8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gS8-BP-J0R"/>
+                            <constraint firstItem="9fe-ur-Y6a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="n9I-mg-dpW"/>
+                            <constraint firstItem="Zzq-qw-HZd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="siS-l8-vto"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JBm-iI-5n8" secondAttribute="bottom" id="v7d-Hq-Ric"/>
+                            <constraint firstItem="fSz-A6-reB" firstAttribute="top" secondItem="9fe-ur-Y6a" secondAttribute="bottom" constant="10" id="vrU-SS-Bat"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnDelete" destination="u52-eb-drn" id="T3z-NC-Q1j"/>
+                        <outlet property="btnUpate" destination="jlN-cf-B3A" id="MRe-Hp-mzz"/>
+                        <outlet property="tableView" destination="JBm-iI-5n8" id="e3x-pT-Pnj"/>
+                        <outlet property="txtAddress" destination="Zzq-qw-HZd" id="GCN-XK-mNv"/>
+                        <outlet property="txtName" destination="9fe-ur-Y6a" id="g7Q-HE-0ww"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>

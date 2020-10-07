@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2876812D24CB257E004127BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2876812C24CB257E004127BD /* AppDelegate.swift */; };
+		2876813124CB257E004127BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2876813024CB257E004127BD /* ViewController.swift */; };
+		2876813424CB257E004127BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2876813224CB257E004127BD /* Main.storyboard */; };
+		2876813624CB2580004127BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2876813524CB2580004127BD /* Assets.xcassets */; };
+		2876813924CB2580004127BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2876813724CB2580004127BD /* LaunchScreen.storyboard */; };
+		2876814724CB2768004127BD /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2876814624CB2768004127BD /* IntentHandler.swift */; };
+		2876815024CB2768004127BD /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2876814F24CB2768004127BD /* IntentsUI.framework */; };
+		2876815324CB2768004127BD /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2876815224CB2768004127BD /* IntentViewController.swift */; };
+		2876815624CB2768004127BD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2876815424CB2768004127BD /* MainInterface.storyboard */; };
+		2876815A24CB2768004127BD /* CarPlayIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2876814D24CB2768004127BD /* CarPlayIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2876815D24CB2768004127BD /* CarPlayIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2876814424CB2768004127BD /* CarPlayIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2876816724CB27CA004127BD /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2876816624CB27CA004127BD /* HomeKit.framework */; };
+		2876816924CB295C004127BD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2876816824CB295C004127BD /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2876815824CB2768004127BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2876812124CB257E004127BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2876814C24CB2768004127BD;
+			remoteInfo = CarPlayIntentUI;
+		};
+		2876815B24CB2768004127BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2876812124CB257E004127BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2876814324CB2768004127BD;
+			remoteInfo = CarPlayIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2876816424CB2768004127BD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2876815A24CB2768004127BD /* CarPlayIntentUI.appex in Embed App Extensions */,
+				2876815D24CB2768004127BD /* CarPlayIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2876812924CB257E004127BD /* CarPlayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPlayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2876812C24CB257E004127BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2876813024CB257E004127BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2876813324CB257E004127BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2876813524CB2580004127BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2876813824CB2580004127BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2876813A24CB2580004127BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2876814424CB2768004127BD /* CarPlayIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CarPlayIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2876814624CB2768004127BD /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		2876814824CB2768004127BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2876814D24CB2768004127BD /* CarPlayIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CarPlayIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2876814F24CB2768004127BD /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		2876815224CB2768004127BD /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		2876815524CB2768004127BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2876815724CB2768004127BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2876816624CB27CA004127BD /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		2876816824CB295C004127BD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		2876816A24CB299C004127BD /* CarPlayTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarPlayTest.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2876812624CB257E004127BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2876816724CB27CA004127BD /* HomeKit.framework in Frameworks */,
+				2876816924CB295C004127BD /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2876814124CB2768004127BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2876814A24CB2768004127BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2876815024CB2768004127BD /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2876812024CB257E004127BD = {
+			isa = PBXGroup;
+			children = (
+				2876812B24CB257E004127BD /* CarPlayTest */,
+				2876814524CB2768004127BD /* CarPlayIntent */,
+				2876815124CB2768004127BD /* CarPlayIntentUI */,
+				2876814E24CB2768004127BD /* Frameworks */,
+				2876812A24CB257E004127BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2876812A24CB257E004127BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2876812924CB257E004127BD /* CarPlayTest.app */,
+				2876814424CB2768004127BD /* CarPlayIntent.appex */,
+				2876814D24CB2768004127BD /* CarPlayIntentUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2876812B24CB257E004127BD /* CarPlayTest */ = {
+			isa = PBXGroup;
+			children = (
+				2876816A24CB299C004127BD /* CarPlayTest.entitlements */,
+				2876812C24CB257E004127BD /* AppDelegate.swift */,
+				2876813024CB257E004127BD /* ViewController.swift */,
+				2876813224CB257E004127BD /* Main.storyboard */,
+				2876813524CB2580004127BD /* Assets.xcassets */,
+				2876813724CB2580004127BD /* LaunchScreen.storyboard */,
+				2876813A24CB2580004127BD /* Info.plist */,
+			);
+			path = CarPlayTest;
+			sourceTree = "<group>";
+		};
+		2876814524CB2768004127BD /* CarPlayIntent */ = {
+			isa = PBXGroup;
+			children = (
+				2876814624CB2768004127BD /* IntentHandler.swift */,
+				2876814824CB2768004127BD /* Info.plist */,
+			);
+			path = CarPlayIntent;
+			sourceTree = "<group>";
+		};
+		2876814E24CB2768004127BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2876816824CB295C004127BD /* HealthKit.framework */,
+				2876816624CB27CA004127BD /* HomeKit.framework */,
+				2876814F24CB2768004127BD /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2876815124CB2768004127BD /* CarPlayIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				2876815224CB2768004127BD /* IntentViewController.swift */,
+				2876815424CB2768004127BD /* MainInterface.storyboard */,
+				2876815724CB2768004127BD /* Info.plist */,
+			);
+			path = CarPlayIntentUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2876812824CB257E004127BD /* CarPlayTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2876813D24CB2580004127BD /* Build configuration list for PBXNativeTarget "CarPlayTest" */;
+			buildPhases = (
+				2876812524CB257E004127BD /* Sources */,
+				2876812624CB257E004127BD /* Frameworks */,
+				2876812724CB257E004127BD /* Resources */,
+				2876816424CB2768004127BD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2876815924CB2768004127BD /* PBXTargetDependency */,
+				2876815C24CB2768004127BD /* PBXTargetDependency */,
+			);
+			name = CarPlayTest;
+			productName = CarPlayTest;
+			productReference = 2876812924CB257E004127BD /* CarPlayTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2876814324CB2768004127BD /* CarPlayIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2876816124CB2768004127BD /* Build configuration list for PBXNativeTarget "CarPlayIntent" */;
+			buildPhases = (
+				2876814024CB2768004127BD /* Sources */,
+				2876814124CB2768004127BD /* Frameworks */,
+				2876814224CB2768004127BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarPlayIntent;
+			productName = CarPlayIntent;
+			productReference = 2876814424CB2768004127BD /* CarPlayIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2876814C24CB2768004127BD /* CarPlayIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2876815E24CB2768004127BD /* Build configuration list for PBXNativeTarget "CarPlayIntentUI" */;
+			buildPhases = (
+				2876814924CB2768004127BD /* Sources */,
+				2876814A24CB2768004127BD /* Frameworks */,
+				2876814B24CB2768004127BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarPlayIntentUI;
+			productName = CarPlayIntentUI;
+			productReference = 2876814D24CB2768004127BD /* CarPlayIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2876812124CB257E004127BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Bunti Nizama";
+				TargetAttributes = {
+					2876812824CB257E004127BD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					2876814324CB2768004127BD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					2876814C24CB2768004127BD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 2876812424CB257E004127BD /* Build configuration list for PBXProject "CarPlayTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2876812024CB257E004127BD;
+			productRefGroup = 2876812A24CB257E004127BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2876812824CB257E004127BD /* CarPlayTest */,
+				2876814324CB2768004127BD /* CarPlayIntent */,
+				2876814C24CB2768004127BD /* CarPlayIntentUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2876812724CB257E004127BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2876813924CB2580004127BD /* LaunchScreen.storyboard in Resources */,
+				2876813624CB2580004127BD /* Assets.xcassets in Resources */,
+				2876813424CB257E004127BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2876814224CB2768004127BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2876814B24CB2768004127BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2876815624CB2768004127BD /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2876812524CB257E004127BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2876813124CB257E004127BD /* ViewController.swift in Sources */,
+				2876812D24CB257E004127BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2876814024CB2768004127BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2876814724CB2768004127BD /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2876814924CB2768004127BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2876815324CB2768004127BD /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2876815924CB2768004127BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2876814C24CB2768004127BD /* CarPlayIntentUI */;
+			targetProxy = 2876815824CB2768004127BD /* PBXContainerItemProxy */;
+		};
+		2876815C24CB2768004127BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2876814324CB2768004127BD /* CarPlayIntent */;
+			targetProxy = 2876815B24CB2768004127BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2876813224CB257E004127BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2876813324CB257E004127BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2876813724CB2580004127BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2876813824CB2580004127BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2876815424CB2768004127BD /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2876815524CB2768004127BD /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2876813B24CB2580004127BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2876813C24CB2580004127BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2876813E24CB2580004127BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CarPlayTest/CarPlayTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarPlayTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BuntiNizama-Test.CarPlayTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2876813F24CB2580004127BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CarPlayTest/CarPlayTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarPlayTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BuntiNizama-Test.CarPlayTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2876815F24CB2768004127BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarPlayIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BuntiNizama-Test.CarPlayTest.CarPlayIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2876816024CB2768004127BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarPlayIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BuntiNizama-Test.CarPlayTest.CarPlayIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2876816224CB2768004127BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarPlayIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BuntiNizama-Test.CarPlayTest.CarPlayIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2876816324CB2768004127BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarPlayIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BuntiNizama-Test.CarPlayTest.CarPlayIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2876812424CB257E004127BD /* Build configuration list for PBXProject "CarPlayTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2876813B24CB2580004127BD /* Debug */,
+				2876813C24CB2580004127BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2876813D24CB2580004127BD /* Build configuration list for PBXNativeTarget "CarPlayTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2876813E24CB2580004127BD /* Debug */,
+				2876813F24CB2580004127BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2876815E24CB2768004127BD /* Build configuration list for PBXNativeTarget "CarPlayIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2876815F24CB2768004127BD /* Debug */,
+				2876816024CB2768004127BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2876816124CB2768004127BD /* Build configuration list for PBXNativeTarget "CarPlayIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2876816224CB2768004127BD /* Debug */,
+				2876816324CB2768004127BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2876812124CB257E004127BD /* Project object */;
+}

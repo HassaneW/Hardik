@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>737549483839-23rm1u4dv2nl3lort47jmsqc401dt63a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.737549483839-23rm1u4dv2nl3lort47jmsqc401dt63a</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC2A6vaSo4Wz3E4EU6xIzVCtz7cuZ4b3js</string>
+	<key>GCM_SENDER_ID</key>
+	<string>737549483839</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Com.hardik.firebaseExample</string>
+	<key>PROJECT_ID</key>
+	<string>fir-examplehardik</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-examplehardik.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:737549483839:ios:54f721a5ec939ea6e95d8a</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-examplehardik.firebaseio.com</string>
+</dict>
+</plist>

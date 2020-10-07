@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bkN-YY-K8u">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lOI-WC-km3">
+            <objects>
+                <navigationController id="yHm-xE-Icw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5uP-dB-kln">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="goj-px-gn4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7M2-7c-oK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1146" y="105"/>
+        </scene>
+        <!--Car Play-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" title="Car Play" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="CarPlayExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wEP-iJ-9zY">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-b5-mw7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="171"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Uyp-cm-Ozl">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="171"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Origin …" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACq-VJ-biZ">
+                                            <rect key="frame" x="21" y="22" width="372" height="38"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="Qco-XC-z8I"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" textContentType="location"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="textFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="42T-DZ-QSq"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Destination …" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gY8-zc-hcQ">
+                                            <rect key="frame" x="21" y="68" width="372" height="38"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="r67-AG-4ws"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="location"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="textFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="dG1-el-Ov1"/>
+                                            </connections>
+                                        </textField>
+                                        <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIE-Wa-MEe">
+                                            <rect key="frame" x="21" y="120" width="372" height="38"/>
+                                            <color key="backgroundColor" red="0.21960784310000001" green="0.62745098040000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="auo-Sv-OeG"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Start Route"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="19"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="startRoot" destination="BYZ-38-t0r" eventType="touchUpInside" id="B74-w3-bLi"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gY8-zc-hcQ" firstAttribute="leading" secondItem="Uyp-cm-Ozl" secondAttribute="leading" constant="21" id="Abo-Ll-jZL"/>
+                                        <constraint firstAttribute="bottom" secondItem="aIE-Wa-MEe" secondAttribute="bottom" constant="13" id="ERd-8x-waJ"/>
+                                        <constraint firstItem="gY8-zc-hcQ" firstAttribute="top" secondItem="ACq-VJ-biZ" secondAttribute="bottom" constant="8" id="Eo5-d3-gMn"/>
+                                        <constraint firstItem="ACq-VJ-biZ" firstAttribute="top" secondItem="Uyp-cm-Ozl" secondAttribute="top" constant="22" id="Pap-w2-G7q"/>
+                                        <constraint firstAttribute="trailing" secondItem="gY8-zc-hcQ" secondAttribute="trailing" constant="21" id="VIe-iD-Hjf"/>
+                                        <constraint firstItem="ACq-VJ-biZ" firstAttribute="leading" secondItem="Uyp-cm-Ozl" secondAttribute="leading" constant="21" id="cnj-lK-4r1"/>
+                                        <constraint firstItem="aIE-Wa-MEe" firstAttribute="firstBaseline" secondItem="gY8-zc-hcQ" secondAttribute="baseline" constant="53" id="f7P-Hu-d3v"/>
+                                        <constraint firstItem="aIE-Wa-MEe" firstAttribute="leading" secondItem="Uyp-cm-Ozl" secondAttribute="leading" constant="21" id="if0-as-xTt"/>
+                                        <constraint firstAttribute="trailing" secondItem="ACq-VJ-biZ" secondAttribute="trailing" constant="21" id="psS-QT-J5d"/>
+                                        <constraint firstAttribute="trailing" secondItem="aIE-Wa-MEe" secondAttribute="trailing" constant="21" id="xhO-36-kNd"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="r8U-Ci-5ls"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wEP-iJ-9zY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="78Q-jG-Vnq"/>
+                            <constraint firstItem="d9d-b5-mw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dee-Gc-Pv0"/>
+                            <constraint firstItem="wEP-iJ-9zY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HSv-jU-Rni"/>
+                            <constraint firstItem="d9d-b5-mw7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mla-vZ-ZlV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d9d-b5-mw7" secondAttribute="trailing" id="bjp-1y-Oi3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wEP-iJ-9zY" secondAttribute="bottom" id="mfq-yr-opO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wEP-iJ-9zY" secondAttribute="trailing" id="xRo-vI-91k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Car Play" id="IPg-SY-AKw"/>
+                    <connections>
+                        <outlet property="destinationTextField" destination="gY8-zc-hcQ" id="Nyb-q9-K37"/>
+                        <outlet property="originTextField" destination="ACq-VJ-biZ" id="Gy5-AS-sux"/>
+                        <outlet property="startRouteButton" destination="aIE-Wa-MEe" id="S2X-JT-zQ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="131"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="0cD-yt-ye8">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bkN-YY-K8u" customClass="TestViewController" customModule="CarPlayExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SfS-5O-SX7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCe-HY-Cm6">
+                                <rect key="frame" x="167" y="64" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="A6V-H8-w6x"/>
+                                    <constraint firstAttribute="width" constant="80" id="At0-Ch-Tuz"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="preshedButton" destination="bkN-YY-K8u" eventType="touchUpInside" id="f5z-Gu-jfG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cCe-HY-Cm6" firstAttribute="top" secondItem="ORP-05-efq" secondAttribute="top" constant="20" id="YVR-6H-Br9"/>
+                            <constraint firstItem="cCe-HY-Cm6" firstAttribute="centerX" secondItem="SfS-5O-SX7" secondAttribute="centerX" id="qyu-Hw-hzH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ORP-05-efq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sge-i7-TAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075" y="-29"/>
+        </scene>
+        <!--Car Play View Controller-->
+        <scene sceneID="ILT-D9-zj2">
+            <objects>
+                <viewController storyboardIdentifier="CarPlayViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R7l-4N-Wxh" customClass="CarPlayViewController" customModule="CarPlayExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JLw-hu-htU">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tj3-DK-0Jn">
+                                <rect key="frame" x="360" y="254" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5Gv-0s-hhl"/>
+                                    <constraint firstAttribute="width" constant="80" id="xkX-tL-n2P"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="preshedButton" destination="R7l-4N-Wxh" eventType="touchUpInside" id="ZRE-Ea-Unn"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Aso-gt-0jF">
+                                <rect key="frame" x="220" y="9" width="360" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Aso-gt-0jF" secondAttribute="height" multiplier="8:5" id="ln5-6v-ukV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tj3-DK-0Jn" firstAttribute="centerX" secondItem="JLw-hu-htU" secondAttribute="centerX" id="5KI-h8-EuH"/>
+                            <constraint firstItem="Aso-gt-0jF" firstAttribute="centerX" secondItem="JLw-hu-htU" secondAttribute="centerX" id="6JF-D6-FPa"/>
+                            <constraint firstItem="Tj3-DK-0Jn" firstAttribute="top" secondItem="Aso-gt-0jF" secondAttribute="bottom" constant="20" id="e8j-Wj-LR6"/>
+                            <constraint firstItem="Aso-gt-0jF" firstAttribute="height" secondItem="JLw-hu-htU" secondAttribute="height" multiplier="0.46875" id="ec6-Ff-gL1"/>
+                            <constraint firstItem="Aso-gt-0jF" firstAttribute="top" secondItem="JLw-hu-htU" secondAttribute="top" constant="9" id="qua-gA-u2K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kRb-Rz-5ZC"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="800" height="480"/>
+                    <connections>
+                        <outlet property="button" destination="Tj3-DK-0Jn" id="1jJ-LQ-26c"/>
+                        <outlet property="imageView" destination="Aso-gt-0jF" id="msB-QW-YT8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glH-Rk-pHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2365" y="-23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.jpg" width="283.46456909179688" height="177.16534423828125"/>
+    </resources>
+</document>
