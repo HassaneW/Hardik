@@ -16,7 +16,8 @@ struct ProfileScreen: View {
      
      // The ToDo class has an `allToDoFetchRequest` function that can be used here
     @FetchRequest(entity: ImageBook.entity(), sortDescriptors: []) var books: FetchedResults<ImageBook>
-    
+    @State private var willMoveToNextScreen = false
+
     var body: some View {
         //        Text("Hello, World!")
             ZStack{
@@ -67,6 +68,8 @@ struct ProfileScreen: View {
                                               }                    
                            )
             }
+                
+               
             .navigationBarTitle("Profile " , displayMode: .inline)
 //            .padding(.horizontal,20)
         
